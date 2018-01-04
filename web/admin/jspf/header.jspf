@@ -1,0 +1,73 @@
+<%--
+ * Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+ *
+ * You may not modify, use, reproduce, or distribute this software
+ * except in compliance with the terms of the license at:
+ * http://developer.sun.com/berkeley_license.html
+
+ * author: Rajkumar
+--%>
+
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/affablebean.css">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link href="/ShopperSquare/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="/ShopperSquare/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+         <link href="/ShopperSquare/css/style.css" rel="stylesheet" type="text/css"/>
+
+        <script src="../js/jquery-1.4.2.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('tr.tableRow').hover(
+                    function () {
+                        $(this).addClass('selectedRow');
+                    },
+                    function () {
+                        $(this).removeClass('selectedRow');
+                    }
+                );
+             });
+        </script>
+
+        <title>Shopper Square :: Admin Console</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="header">
+                <div class="logo_products">
+                        <div class="container">
+                            <div class="w3ls_logo_products_left1">
+                                <ul class="phone_email">
+                                    <li><i class="fa fa-android" aria-hidden="true"></i> Admin Console</li>
+
+                                </ul>
+                            </div>
+                            <div class="w3ls_logo_products_left">
+                                <h1><a href="index.jsp">Shopper Square</a></h1>
+                            </div>
+                            <div class="w3l_search">
+                                <form action="#" method="post">
+                                    <input type="search" name="Search" placeholder="Search" required="">
+                                    <button type="submit" class="btn btn-default search" aria-label="Left Align">
+                                        <i class="fa fa-search" aria-hidden="true"> </i>
+                                    </button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+
+                            <div class="clearfix"> </div>
+                        </div>
+                    </div>
+            </div>
+
+            <h2>Admin console</h2>

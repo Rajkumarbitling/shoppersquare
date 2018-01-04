@@ -1,0 +1,12 @@
+<%--
+ * Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+ *
+ * You may not modify, use, reproduce, or distribute this software
+ * except in compliance with the terms of the license at:
+ * http://developer.sun.com/berkeley_license.html
+
+ * author: Rajkumar
+--%>
+
+<div class="clearfix"></div>
+<span class="alert alert-danger col-md-12">Oops! An internal error occurred.<br><br>Please return to our <a href="/ShopperSquare/index.jsp">home page</a>.</span>
