@@ -21,7 +21,7 @@ public class Operations implements OperationsInterface {
         int flag = 0;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/affablebean", "root", "root");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/rajbits_affablebean", "rajbits_user", "rajkumar");
             PreparedStatement ps = con.prepareStatement("INSERT INTO product VALUES(?,?,?,?,?,?);");
 
             ps.setInt(1, uObject.getid());
@@ -50,7 +50,7 @@ public class Operations implements OperationsInterface {
         List<UserPOJO> list = new ArrayList<UserPOJO>();
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/affablebean", "root", "root");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/rajbits_affablebean", "rajbits_user", "rajkumar");
             PreparedStatement ps = con.prepareStatement("SELECT * FROM product;");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
@@ -78,7 +78,7 @@ public class Operations implements OperationsInterface {
         int status = 0;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/affablebean", "root", "root");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/rajbits_affablebean", "rajbits_user", "rajkumar");
 
             PreparedStatement ps = con.prepareStatement("UPDATE product SET name=?,price=?,description=?,category_id=?,last_update=? WHERE id=?;");
 
@@ -110,7 +110,7 @@ public class Operations implements OperationsInterface {
         int status = 0;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/affablebean", "root", "root");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/rajbits_affablebean", "rajbits_user", "rajkumar");
             PreparedStatement ps = con.prepareStatement("DELETE FROM product WHERE id=?;");
 
             ps.setString(1, id);
